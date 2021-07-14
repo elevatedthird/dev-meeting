@@ -1,11 +1,11 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '2.0.0',
-        'version' => '2.0.0.0',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => 'c55139abf3e77ebde318a90f16aefbc949985a5c',
         'name' => 'elevatedthird/paragon-base',
         'dev' => true,
     ),
@@ -365,6 +365,15 @@
             'install_path' => __DIR__ . '/../doctrine/reflection',
             'aliases' => array(),
             'reference' => 'fa587178be682efe90d005e3a322590d6ebb59a5',
+            'dev_requirement' => false,
+        ),
+        'drupal/acquia_search' => array(
+            'pretty_version' => '3.0.4',
+            'version' => '3.0.4.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../docroot/modules/contrib/acquia_search',
+            'aliases' => array(),
+            'reference' => '3.0.4',
             'dev_requirement' => false,
         ),
         'drupal/action' => array(
@@ -1595,12 +1604,12 @@
             'dev_requirement' => false,
         ),
         'drupal/search_api_solr' => array(
-            'pretty_version' => '1.11.0',
-            'version' => '1.11.0.0',
+            'pretty_version' => '4.2.0',
+            'version' => '4.2.0.0',
             'type' => 'drupal-module',
             'install_path' => __DIR__ . '/../../docroot/modules/contrib/search_api_solr',
             'aliases' => array(),
-            'reference' => '8.x-1.11',
+            'reference' => '4.2.0',
             'dev_requirement' => false,
         ),
         'drupal/seckit' => array(
@@ -1901,12 +1910,12 @@
             'dev_requirement' => false,
         ),
         'elevatedthird/paragon-base' => array(
-            'pretty_version' => '2.0.0',
-            'version' => '2.0.0.0',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => 'c55139abf3e77ebde318a90f16aefbc949985a5c',
             'dev_requirement' => false,
         ),
         'enlightn/security-checker' => array(
@@ -2008,6 +2017,15 @@
             'reference' => '61ad68e934066a6f8df29a3d23a6460536d0855c',
             'dev_requirement' => false,
         ),
+        'http-interop/http-factory-guzzle' => array(
+            'pretty_version' => '1.0.0',
+            'version' => '1.0.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../http-interop/http-factory-guzzle',
+            'aliases' => array(),
+            'reference' => '34861658efb9899a6618cef03de46e2a52c80fc0',
+            'dev_requirement' => false,
+        ),
         'instaclick/php-webdriver' => array(
             'pretty_version' => '1.4.9',
             'version' => '1.4.9.0',
@@ -2080,6 +2098,15 @@
             'reference' => '0ec57e8264ec92565974ead0d1724cf1026e10c1',
             'dev_requirement' => false,
         ),
+        'maennchen/zipstream-php' => array(
+            'pretty_version' => '2.1.0',
+            'version' => '2.1.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../maennchen/zipstream-php',
+            'aliases' => array(),
+            'reference' => 'c4c5803cc1f93df3d2448478ef79394a5981cc58',
+            'dev_requirement' => false,
+        ),
         'masterminds/html5' => array(
             'pretty_version' => '2.7.5',
             'version' => '2.7.5.0',
@@ -2087,6 +2114,15 @@
             'install_path' => __DIR__ . '/../masterminds/html5',
             'aliases' => array(),
             'reference' => 'f640ac1bdddff06ea333a920c95bbad8872429ab',
+            'dev_requirement' => false,
+        ),
+        'myclabs/php-enum' => array(
+            'pretty_version' => '1.8.3',
+            'version' => '1.8.3.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../myclabs/php-enum',
+            'aliases' => array(),
+            'reference' => 'b942d263c641ddb5190929ff840c68f78713e937',
             'dev_requirement' => false,
         ),
         'nikic/php-parser' => array(
@@ -2158,6 +2194,45 @@
             'reference' => 'b14fbe2ddb0b9f94f5b24cf08783d599f776fff0',
             'dev_requirement' => false,
         ),
+        'php-http/async-client-implementation' => array(
+            'dev_requirement' => false,
+            'provided' => array(
+                0 => '1.0',
+            ),
+        ),
+        'php-http/client-implementation' => array(
+            'dev_requirement' => false,
+            'provided' => array(
+                0 => '1.0',
+            ),
+        ),
+        'php-http/guzzle6-adapter' => array(
+            'pretty_version' => 'v2.0.2',
+            'version' => '2.0.2.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../php-http/guzzle6-adapter',
+            'aliases' => array(),
+            'reference' => '9d1a45eb1c59f12574552e81fb295e9e53430a56',
+            'dev_requirement' => false,
+        ),
+        'php-http/httplug' => array(
+            'pretty_version' => '2.2.0',
+            'version' => '2.2.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../php-http/httplug',
+            'aliases' => array(),
+            'reference' => '191a0a1b41ed026b717421931f8d3bd2514ffbf9',
+            'dev_requirement' => false,
+        ),
+        'php-http/promise' => array(
+            'pretty_version' => '1.1.0',
+            'version' => '1.1.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../php-http/promise',
+            'aliases' => array(),
+            'reference' => '4c4c1f9b7289a2ec57cde7f1e9762a5789506f88',
+            'dev_requirement' => false,
+        ),
         'psr/cache' => array(
             'pretty_version' => '1.0.1',
             'version' => '1.0.1.0',
@@ -2179,8 +2254,8 @@
         'psr/container-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0',
-                1 => '^1.0',
+                0 => '^1.0',
+                1 => '1.0',
             ),
         ),
         'psr/event-dispatcher' => array(
@@ -2207,6 +2282,12 @@
             'reference' => '2dfb5f6c5eff0e91e20e913f8c5452ed95b86621',
             'dev_requirement' => false,
         ),
+        'psr/http-client-implementation' => array(
+            'dev_requirement' => false,
+            'provided' => array(
+                0 => '1.0',
+            ),
+        ),
         'psr/http-factory' => array(
             'pretty_version' => '1.0.1',
             'version' => '1.0.1.0',
@@ -2220,6 +2301,7 @@
             'dev_requirement' => false,
             'provided' => array(
                 0 => '1.0',
+                1 => '^1.0',
             ),
         ),
         'psr/http-message' => array(

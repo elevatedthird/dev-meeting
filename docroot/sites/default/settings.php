@@ -10,7 +10,7 @@ $settings['config_sync_directory'] = '../config/default';
 /**
  * Hash salt used for one-time login links, etc.
  */
-$settings['hash_salt'] = '';
+$settings['hash_salt'] = 'bCGrIovRltkVlkJDK-MTSHFMxYRQvXiE4OrhBduU2BuKWeWOjblrkBn00B0yXvUC3fpmFE15Sg';
 
 /**
  * Access control for update.php script.
@@ -96,3 +96,13 @@ elseif (file_exists($app_root . '/' . $site_path . '/settings.drupalvm.php')) {
 if(file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
 }
+$databases['default']['default'] = array (
+  'database' => 'drupal',
+  'username' => 'drupal',
+  'password' => 'drupal',
+  'prefix' => '',
+  'host' => 'localhost',
+  'port' => '3306',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
+  'driver' => 'mysql',
+);

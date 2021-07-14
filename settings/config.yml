@@ -1,7 +1,7 @@
 # DrupalVM project-specific configuration overrides
-vagrant_project_name: paragon
-vagrant_ip: 192.168.87.87
-vagrant_hostname: 'paragon.dvm'
+vagrant_project_name: dev-meeting
+vagrant_ip: 192.168.87.33
+vagrant_hostname: 'dev-meeting.dvm'
 vagrant_machine_name: '{{ vagrant_project_name }}'
 
 vagrant_synced_folders:
@@ -20,6 +20,9 @@ installed_extras:
   - mailhog
   - memcached
   - pimpmylog
+  - solr
   - varnish
   - xdebug
 
+post_provision_scripts:
+  - "../../../../settings/configure-solr.sh"
