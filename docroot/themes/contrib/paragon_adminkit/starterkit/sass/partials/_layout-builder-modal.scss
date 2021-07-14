@@ -1,0 +1,92 @@
+/**
+ * Customizations for layout builder modal
+ */
+
+.layout-build-modal-form {
+  font-family: "Open Sans", sans-serif;
+  button,
+  input,
+  optgroup,
+  select,
+  textarea,
+  .js-form-item label,
+  h1, h2, h3, h4, h5, h6 {
+    color: var(--colorGinText);
+    font-weight: normal;
+  }
+
+  .js-form-item label {
+    font-family: BlinkMacSystemFont , -apple-system , "Segoe UI" , Roboto , Oxygen-Sans , Ubuntu , Cantarell , "Helvetica Neue" , sans-serif;
+    color: var(--colorGinText);
+    margin-bottom: 0.25rem;
+    font-size: 0.889rem;
+    font-weight: bold;
+    line-height: 1.125rem;
+  }
+
+  // This displays the component type at the top of the modal
+  .form-item-settings-admin-label {
+    font-size: 12px;
+    margin-bottom: 0;
+    &:before {
+      content: 'Component: ';
+      display: inline-block;
+    }
+    label {
+      display: none;
+    }
+  }
+
+  // Hide admin block title
+  .js-form-item-settings-label {
+    display: none;
+  }
+
+  // When the select is chosen, don't use the gin height for the input
+  .chosen-container {
+    .chosen-single {
+      color: black;
+    }
+    input {
+      min-height: auto !important;
+    }
+  }
+  // Add space between paragraph buttons
+  .paragraphs-dropbutton-wrapper {
+    input.button + input.button {
+      margin-left: 1em;
+    }
+  }
+
+  // Make link fields display side by side
+  .field--type-link {
+    .fieldset-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+
+      .js-form-item {
+        flex: 1;
+        margin: 0 16px 0 0;
+        max-width: 440px;
+
+        &:first-child{
+          margin-left: 0;
+        }
+      }
+
+      input {
+        width: 100%;
+      }
+
+      details {
+        flex: 0 0 100%;
+      }
+    }
+  }
+
+  // Make sure images don't display too large
+  svg,
+  img {
+    max-width: 100px;
+  }
+}

@@ -1,0 +1,35 @@
+{#
+/**
+ * @file
+ * Theme override to display a region.
+ *
+ * Available variables:
+ * - content: The content for this region, typically blocks.
+ * - attributes: HTML attributes for the region <div>.
+ * - region: The name of the region variable as defined in the theme's
+ *   .info.yml file.
+ *
+ * @see template_preprocess_region()
+ */
+#}
+{% extends "@partials/region/region.html.twig" %}
+{% block region %}
+{%
+  set classes = [
+    'grid-container',
+    'full',
+    'bg-color-black-darkest',
+    'padding-small-default--top',
+    'padding-small-default--bottom'
+  ]
+%}
+{% if content %}
+  <div class="{{ classes|join(' ') }}">
+    <div class="grid-container color-white-darker">
+      <div class="grid-x grid-margin-x grid-margin-y align-middle align-justify">
+        {{ content }}
+      </div>
+    </div>
+  </div>
+{% endif %}
+{% endblock %}

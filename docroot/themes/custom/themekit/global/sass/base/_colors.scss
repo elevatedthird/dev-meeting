@@ -1,0 +1,67 @@
+/**
+ * Colors
+ * - 01 - Definitions
+ * - 02 - Variables
+ * - 03 - Mapping
+ */
+
+
+/*------------------------------------*\
+  01 - Definitions
+\*------------------------------------*/
+
+$colors: (
+  primary: (
+    default: red,
+  ),
+  secondary: (
+    default: blue,
+  ),
+  white: ( // White
+    default: #FFFFFF,
+  ),
+  black: ( // Black
+    default: #000000,
+  ),
+  gray: ( // Gray
+    dark: #464646,
+    default: #444342,
+    light: #808080,
+  ),
+);
+
+
+
+
+
+/*------------------------------------*\
+  02 - Variables
+\*------------------------------------*/
+
+// Primary - Red
+$color-primary: color(primary, default);
+
+// Secondary - Blue
+$color-secondary: color(secondary, default);
+
+// White
+$white: color(white, default);
+
+// Black
+$black: color(black, default);
+
+// Gray
+$gray: color(gray, default);
+$gray-dark: color(gray, dark);
+$gray-light: color(gray, light);
+
+
+
+/*------------------------------------*\
+  03 - Mapping
+\*------------------------------------*/
+
+// Background Colors
+$bg-colors: (
+  'white': $white,
+);

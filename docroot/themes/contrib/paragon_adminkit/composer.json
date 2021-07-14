@@ -1,0 +1,16 @@
+{
+    "name": "drupal/paragon_adminkit",
+    "description": "Drupal admin sub-theme of the Adminimal Drupal admin theme with specific functional enhancements.",
+    "type": "drupal-theme",
+    "homepage:": "https://www.drupal.org/project/paragon_adminkit",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/paragon_adminkit"
+    },
+    "license": "GPL-2.0-or-later",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://packages.drupal.org/8"
+        }
+    ]
+}

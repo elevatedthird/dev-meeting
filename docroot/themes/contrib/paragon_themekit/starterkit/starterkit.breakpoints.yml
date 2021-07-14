@@ -1,0 +1,39 @@
+starterkit.x_small:
+  label: 'X Small'
+  mediaQuery: ''
+  weight: 0
+  multipliers:
+    - 1x
+    - 2x
+
+starterkit.small:
+  label: Small
+  mediaQuery: 'all and (min-width: 640px)'
+  weight: 1
+  multipliers:
+    - 1x
+    - 2x
+
+starterkit.medium:
+  label: Medium
+  mediaQuery: 'all and (min-width: 786px)'
+  weight: 2
+  multipliers:
+    - 1x
+    - 2x
+
+starterkit.large:
+  label: Large
+  mediaQuery: 'all and (min-width: 1024px)'
+  weight: 3
+  multipliers:
+    - 1x
+    - 2x
+
+starterkit.x_large:
+  label: 'X Large'
+  mediaQuery: 'all and (min-width: 1366px)'
+  weight: 4
+  multipliers:
+    - 1x
+    - 2x

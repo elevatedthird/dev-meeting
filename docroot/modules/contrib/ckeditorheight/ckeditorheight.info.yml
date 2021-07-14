@@ -1,0 +1,14 @@
+name: "CKEditorHeight"
+type: module
+description: "Adjusts CKEditor height to field row setting until we have https://www.drupal.org/node/2788905."
+core: 8.x
+package: Editor
+configure: ckeditorheight.settings_form
+core_version_requirement: ^8 || ^9
+dependencies:
+  - drupal:ckeditor
+
+# Information added by Drupal.org packaging script on 2020-01-27
+version: '8.x-1.8'
+project: 'ckeditorheight'
+datestamp: 1580163327

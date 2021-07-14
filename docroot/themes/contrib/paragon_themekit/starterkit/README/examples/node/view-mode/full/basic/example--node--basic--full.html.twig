@@ -1,0 +1,32 @@
+{% extends "@partials/node/node-wrapper.html.twig" %}
+{% block node %}
+ {%
+    set page_title_classes = [
+    'grid-container',
+    'max-text-width',
+    'no-margin--bottom'
+  ]
+  %}
+
+
+  {%
+    set content_classes = [
+    'grid-container',
+    'max-text-width',
+    'padding-large-default--top',
+    'padding-large-default--bottom'
+  ]
+  %}
+  {{ title_prefix }}
+  <div class="grid-container full padding-large-default--top padding-large-default--bottom bg-color-white-darker">
+    <h2{{ title_attributes.addClass(page_title_classes) }}>
+      {{ label }}
+    </h2>
+  </div>
+  {{ title_suffix }}
+  {% if content.body[0] %}
+    <div{{ content_attributes.addClass(content_classes) }}>
+      {{ content.body }}
+    </div>
+  {% endif %}
+{% endblock %}

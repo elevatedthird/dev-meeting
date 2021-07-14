@@ -1,0 +1,11 @@
+name: Paragon AdminKit
+type: theme
+description: 'Placeholder parent admin theme built for the Paragon distribution of Drupal 8. DO NOT install this theme, and instead use the starterkit theme contained within. See the README for for information.'
+core_version_requirement: ^8 || ^9
+base theme: gin
+hidden: true
+
+# Information added by Drupal.org packaging script on 2021-06-10
+version: '8.x-1.0-alpha12'
+project: 'paragon_adminkit'
+datestamp: 1623331044

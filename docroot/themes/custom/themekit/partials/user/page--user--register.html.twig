@@ -1,0 +1,13 @@
+{{ attach_library('themekit/user') }}
+<div class="user-login">
+  <div class="user-login__highlighted">
+    {{ page.highlighted }}
+  </div>
+  <div class="user-login__content">
+    {{ page.content }}
+    <ul class="user-login__links">
+      <li><a href="{{ path('user.login') }}">Already have an account? Log in</a></li>
+      <li><a href="{{ url('<front>') }}">Return to the homepage</a></li>
+    </ul>
+  </div>
+</div>

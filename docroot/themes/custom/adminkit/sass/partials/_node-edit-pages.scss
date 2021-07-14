@@ -1,0 +1,179 @@
+/*
+* Custom styles for the node edit pages
+ */
+
+// Disable the right sidebar on node edit forms for all but large screens.
+$max-width: 900px;
+$meta-width: 400px;
+$transition-time: 0.15s;
+
+.layout-node-form {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.layout-region {
+  position: relative;
+  &.layout-region-node-main,
+  &.layout-region-node-secondary {
+    float: none;
+    width: auto;
+  }
+
+  &.layout-region-node-main {
+    padding-right: 0;
+    margin-bottom: 20px;
+    flex: 1;
+  }
+
+  &.layout-region-node-secondary {
+    display: flex;
+    align-items: flex-start;
+    transition: transform $transition-time ease;
+
+    .vertical-tabs__item > summary {
+      display: block;
+    }
+
+    input[type="text"] {
+      max-width: $max-width / 2;
+    }
+    textarea,
+    .description{
+      max-width: $max-width;
+    }
+  }
+
+  // Make node footer (save, content moderation) sticky to bottom
+  // for easier access to saving node page
+  &.layout-region-node-footer {
+    position: sticky;
+    flex: 0 0 100%;
+    bottom: 0;
+    width: 100%;
+    z-index: 100;
+    padding-right: 0;
+
+    .layout-region-node-footer__content {
+      background: var(--colorGinLayerBackground);
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: calc(100% + 2px);
+      padding-top: 0;
+      &:before {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: -5px;
+        width: calc(100% - 3px);
+        height: calc(100% + 10px);
+        display: block;
+        background: white;
+        z-index: -1;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 3px;
+        width: 100%;
+        height: 5px;
+        display: block;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.07) 0%, rgba(255, 255, 255, 0) 100%);
+      }
+
+      .divider {
+        flex: 100%;
+      }
+
+      .field--name-moderation-state .js-form-wrapper {
+        display: flex;
+
+        .js-form-item {
+          display: flex;
+          align-items: center;
+          align-self: center;
+          margin-top: 1rem;
+          margin-bottom: 1rem;
+          margin-right: 10px;
+        }
+
+        .form-item__label {
+          margin-right: 4px;
+          margin-bottom: 0px;
+        }
+      }
+
+      .form-actions {
+        margin-top: 0;
+        margin-bottom: 0;
+        align-self: center;
+
+        .action-link {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+#edit-gin-sticky {
+  display: none;
+}
+.gin--edit-form .layout-region.layout-region-node-footer {
+  @media (min-width: 1024px) {
+    flex-basis: 100%;
+  }
+}
+
+// Set max width for text areas
+.field--type-text-with-summary,
+.field--type-text-long,
+.field--type-string-long,
+.field--type-text-long .js-text-format-wrapper {
+  max-width: $max-width;
+}
+
+// After edit a block in layout builder, these styles get added.
+// Make sure our max width doesn't effect them.
+.layout-builder-block {
+  .field--type-text-with-summary,
+  .field--type-text-long,
+  .field--type-string-long,
+  .field--type-text-long .js-text-format-wrapper {
+    max-width: none;
+  }
+}
+
+// Custom Link Styles
+// Makes URL and text display side by side
+.field--type-link {
+  .fieldset__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+
+    .js-form-item {
+      flex: 1;
+      margin: 0 16px 0 0;
+      max-width: 440px;
+
+      &:first-child{
+        margin-left: 0;
+      }
+    }
+
+    input {
+      width: 100%;
+    }
+
+    details {
+      flex: 0 0 100%;
+    }
+  }
+}
+
+.description {
+  font-size: 80%;
+}

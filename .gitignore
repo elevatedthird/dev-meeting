@@ -1,0 +1,81 @@
+# Drupal #
+##########
+docroot/files
+docroot/sites/*/files
+docroot/sites/*/private
+docroot/sites/*/settings.local.php
+private
+
+# Node Modules #
+################
+node_modules
+
+# Packages #
+############
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases #
+######################
+*.log
+*.sql
+*.mysql
+
+# OS generated files #
+######################
+ehthumbs.db
+._*
+.DS_Store
+Thumbs.db
+.buildpath
+.cache
+.project
+.settings
+.tmproj
+nbproject
+*.sublime-project
+*.sublime-workspace
+
+# Folders #
+###########
+.hg
+.svn
+.CVS
+.idea
+
+# Numerous always-ignore extensions #
+#####################################
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*~
+*.sass-cache
+*.map
+
+# Ignore patches not in the patches directory #
+*.patch
+!patches/*.patch
+
+# Ignore git directories/files in composer plugins #
+vendor/**/.git
+docroot/**/.git
+vendor/**/.gitattributes
+docroot/**/.gitattributes
+
+# Do not ignore directories necessary for Composer-based drupal-vm
+!vendor/geerlingguy/drupal-vm/**/*.git
+!vendor/geerlingguy/drupal-vm/**/*.mysql
+
+# Ignore Vagrant configuration directories
+.vagrant*

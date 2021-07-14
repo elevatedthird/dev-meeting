@@ -1,0 +1,14 @@
+global-styling:
+  version: 1.x
+  css:
+    base:
+      fonts/icomoon/style.css: {}
+      dist/style.css: {}
+  js:
+#    dist/polyfill.js: {}
+    dist/starterkit.js: {}
+  dependencies:
+    - core/jquery
+    - core/ckeditor
+    - core/drupal
+    - core/drupal.ajax

@@ -1,0 +1,42 @@
+////
+/// Header
+////
+
+// Base Mxins and vars
+#main-header {
+  position: relative;
+}
+
+
+
+.region-header {
+  background-color: color(white);
+  .default-logo {
+    display: none
+  }
+  .alt-logo {
+    display: block;
+  }
+  &.is-front {
+    background-color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 20;
+    .default-logo {
+      display: block
+    }
+    .alt-logo {
+      display: none;
+    }
+  }
+
+}
+
+.layout-builder-edit-page .region-header.is-front {
+  position: static;
+  display: none;
+}
+
+

@@ -1,0 +1,19 @@
+{#
+use in a file like this ;)
+  {% from '@partials/macro/button/_button.html.twig' import button %}
+  {{ button(item.title, item.url, 'dark', content.field_option['#items'].0.entity.field_plain_text_long.value) }}
+generates markup for a button.
+@param string title
+@param string url
+@param string type
+@param string alignment
+#}
+{% macro button(title, url, type, alignment) %}
+  {{ attach_library('themekit/macro--button') }}
+  {% set type = type|default('dark') %}
+  {% set alignment = alignment|default('left') %}
+  <div class="text-center medium-{{ alignment }}">
+      <a class="button--{{ type }}" href="{{ url }}" data-smooth-scroll>{{ title }}</a>
+  </div>
+{% endmacro %}
+

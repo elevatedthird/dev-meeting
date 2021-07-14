@@ -1,0 +1,10 @@
+{
+    "name": "drupal/paragon_themekit",
+    "description": "A subtheme of Classy, built for the Paragon distribution of Drupal 8.",
+    "type": "drupal-theme",
+    "homepage:": "https://www.drupal.org/project/paragon_themekit",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/paragon_themekit"
+    },
+    "license": "GPL-2.0-or-later"
+}

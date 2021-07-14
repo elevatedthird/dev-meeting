@@ -1,0 +1,19 @@
+{#
+/**
+ * @file
+ * Theme override for "Simple" component.
+ */
+#}
+
+{% extends "@partials/component/block.html.twig" %}
+
+{# Add custom classes without disrupting classes set on parent template #}
+{% set custom_classes = [
+  theme ? 'theme--' ~ theme
+]
+%}
+{% set attributes = attributes.addClass(custom_classes) %}
+
+{% block content %}
+  {{ content }}
+{% endblock %}

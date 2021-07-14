@@ -1,0 +1,46 @@
+/**
+ * Typography
+ * - 01 - Headings
+ * - 02 - Formatted Text
+ */
+
+
+/*------------------------------------*\
+  01 - Headings
+\*------------------------------------*/
+
+h1, h2, h3, h4, h5, h6 {
+  p {
+    font-size: inherit;
+    line-height: inherit;
+  }
+}
+
+// TODO: Update with mobile sizes.
+h1, .h1 { font-size: rem-calc(56) }
+h2, .h2 { font-size: rem-calc(14) }
+h3, .h3 { font-size: rem-calc(48) }
+h4, .h4 { font-size: rem-calc(32) }
+h5, .h5 { font-size: rem-calc(22) }
+h6, .h6 { font-size: rem-calc(16) }
+p, .p { font-size: rem-calc(16) }
+small, .small { font-size: rem-calc(14) }
+
+@include breakpoint(medium) {
+  .h1 { font-size: rem-calc(56) }
+  .h2 { font-size: rem-calc(14) }
+  .h3 { font-size: rem-calc(48) }
+  .h4 { font-size: rem-calc(32) }
+  .h5 { font-size: rem-calc(22) }
+  .h6 { font-size: rem-calc(16) }
+}
+
+
+
+/*------------------------------------*\
+  02 - Formatted Text
+\*------------------------------------*/
+
+.text-formatted {
+  a {}
+}
