@@ -5,7 +5,7 @@
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => 'c55139abf3e77ebde318a90f16aefbc949985a5c',
+        'reference' => 'ff9f4a4e4dd44b11c31f76176529c315068fad93',
         'name' => 'elevatedthird/paragon-base',
         'dev' => true,
     ),
@@ -1076,6 +1076,24 @@
             'reference' => '8.x-1.0-beta18',
             'dev_requirement' => false,
         ),
+        'drupal/graphql' => array(
+            'pretty_version' => '3.1.0',
+            'version' => '3.1.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../docroot/modules/contrib/graphql',
+            'aliases' => array(),
+            'reference' => '8.x-3.1',
+            'dev_requirement' => false,
+        ),
+        'drupal/graphql_search_api' => array(
+            'pretty_version' => '1.2.0',
+            'version' => '1.2.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../docroot/modules/contrib/graphql_search_api',
+            'aliases' => array(),
+            'reference' => '8.x-1.2',
+            'dev_requirement' => false,
+        ),
         'drupal/gtm' => array(
             'pretty_version' => '1.6.0',
             'version' => '1.6.0.0',
@@ -1915,7 +1933,7 @@
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => 'c55139abf3e77ebde318a90f16aefbc949985a5c',
+            'reference' => 'ff9f4a4e4dd44b11c31f76176529c315068fad93',
             'dev_requirement' => false,
         ),
         'enlightn/security-checker' => array(
@@ -2300,8 +2318,8 @@
         'psr/http-factory-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.0',
-                1 => '^1.0',
+                0 => '^1.0',
+                1 => '1.0',
             ),
         ),
         'psr/http-message' => array(
@@ -2809,6 +2827,15 @@
             'install_path' => __DIR__ . '/../webmozart/path-util',
             'aliases' => array(),
             'reference' => 'd939f7edc24c9a1bb9c0dee5cb05d8e859490725',
+            'dev_requirement' => false,
+        ),
+        'webonyx/graphql-php' => array(
+            'pretty_version' => 'v0.12.6',
+            'version' => '0.12.6.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../webonyx/graphql-php',
+            'aliases' => array(),
+            'reference' => '4c545e5ec4fc37f6eb36c19f5a0e7feaf5979c95',
             'dev_requirement' => false,
         ),
         'zaporylie/composer-drupal-optimizations' => array(

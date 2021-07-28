@@ -1,0 +1,22 @@
+diff --git a/src/Routing/QueryRouteEnhancer.php b/src/Routing/QueryRouteEnhancer.php
+index 1bfe27f..9a3dcec 100644
+--- a/src/Routing/QueryRouteEnhancer.php
++++ b/src/Routing/QueryRouteEnhancer.php
+@@ -30,10 +30,14 @@ class QueryRouteEnhancer implements EnhancerInterface {
+     // By default we assume a 'single' request. This is going to fail in the
+     // graphql processor due to a missing query string but at least provides
+     // the right format for the client to act upon.
++    
++    // Following recommendation from
++    // https://github.com/drupal-graphql/graphql/issues/982
++    // to fix Trying to access array offset on value of type bool error
+     return $defaults + [
+-      '_controller' => $defaults['_graphql']['single'],
+-      'operations' => $operations,
+-    ];
++        '_controller' => $defaults['_controller'],
++        'operations' => $operations,
++      ];
+   }
+ 
+   /**

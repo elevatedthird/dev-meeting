@@ -5,8 +5,10 @@ dependencies:
   module:
     - search_api_solr
     - node
+    - taxonomy
     - search_api
   config:
+    - field.storage.node.field_topic
     - search_api.server.local_solr_server
 third_party_settings:
   search_api_solr:
@@ -73,6 +75,16 @@ field_settings:
     dependencies:
       module:
         - node
+  topic:
+    label: 'Topic » Taxonomy term » Name'
+    datasource_id: 'entity:node'
+    property_path: 'field_topic:entity:name'
+    type: string
+    dependencies:
+      config:
+        - field.storage.node.field_topic
+      module:
+        - taxonomy
 datasource_settings:
   'entity:node':
     bundles:

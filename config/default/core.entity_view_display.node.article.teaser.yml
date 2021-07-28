@@ -6,9 +6,10 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.article.body
     - field.field.node.article.field_tags
+    - field.field.node.article.field_topic
     - node.type.article
   module:
-    - text
+    - smart_trim
     - user
 _core:
   default_config_hash: nnYl59CDAAJJHREFGjtCdpJvhqByF7Px6FZMF3A4ltQ
@@ -18,26 +19,46 @@ bundle: article
 mode: teaser
 content:
   body:
-    type: text_summary_or_trimmed
+    type: smart_trim
     weight: 0
     settings:
-      trim_length: 600
+      trim_length: 100
+      trim_type: chars
+      trim_suffix: ''
+      wrap_class: trimmed
+      more_text: More
+      more_class: more-link
+      summary_handler: full
+      wrap_output: false
+      more_link: false
+      trim_options:
+        text: false
+        trim_zero: false
     third_party_settings: {  }
     label: hidden
     region: content
   field_tags:
     type: entity_reference_label
-    weight: 10
+    weight: 1
     settings:
       link: true
     third_party_settings: {  }
-    label: above
+    label: inline
     region: content
+  field_topic:
+    type: entity_reference_label
+    weight: 2
+    region: content
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
   links:
-    weight: 100
+    weight: 3
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_tags: true
+  content_moderation_control: true
   langcode: true
+  search_api_excerpt: true

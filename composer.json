@@ -58,6 +58,8 @@
     "drupal/field_tools": "dev-1.x",
     "drupal/focal_point": "^1.0",
     "drupal/gin": "^3.0@alpha",
+    "drupal/graphql": "^3.0",
+    "drupal/graphql_search_api": "^1.2",
     "drupal/gtm": "^1.6",
     "drupal/http_cache_control": "^2.0",
     "drupal/imageapi_optimize": "~4.0.0@beta",
@@ -230,6 +232,10 @@
       "drupal/paragraphs": {
         "Affix correct langcode to paragraph in layout builder": "https://www.drupal.org/files/issues/2020-06-25/paragraphs-2901390-51.patch",
         "Paragraphs do not render: access check for 'view' fail when using layout builder + custom blocks & content revisions because the incorrect parent revision ID is being passed in ParagraphAccessControlHandler::checkAccess(": "https://www.drupal.org/files/issues/2020-07-08/access-controll-issue-3090200-22.patch"
+      },
+      "drupal/graphql": {
+        "GitHub issue": "./patches/druapl-graphql-fix-to-github-issue-982.patch",
+        "Layout builder issue": "./patches/drupal-graphql-layout-builder.patch"
       }
     }
   },

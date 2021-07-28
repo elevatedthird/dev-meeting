@@ -5,6 +5,7 @@ dependencies:
   config:
     - field.field.node.article.body
     - field.field.node.article.field_tags
+    - field.field.node.article.field_topic
     - node.type.article
   module:
     - text
@@ -23,6 +24,11 @@ content:
     third_party_settings: {  }
     label: hidden
     region: content
+  content_moderation_control:
+    weight: -20
+    settings: {  }
+    third_party_settings: {  }
+    region: content
   field_tags:
     type: entity_reference_label
     weight: 10
@@ -30,6 +36,14 @@ content:
     settings:
       link: true
     third_party_settings: {  }
+    region: content
+  field_topic:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
     region: content
   links:
     weight: 100
@@ -39,3 +53,4 @@ content:
 hidden:
   field_tags: true
   langcode: true
+  search_api_excerpt: true

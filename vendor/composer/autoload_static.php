@@ -170,6 +170,7 @@ class ComposerStaticInit035782a89a9a4da90d68a8b36f02d7d8
             'GuzzleHttp\\' => 11,
             'Grasmash\\YamlExpander\\' => 22,
             'Grasmash\\Expander\\' => 18,
+            'GraphQL\\' => 8,
             'Goutte\\' => 7,
         ),
         'E' => 
@@ -542,6 +543,10 @@ class ComposerStaticInit035782a89a9a4da90d68a8b36f02d7d8
         'Grasmash\\Expander\\' => 
         array (
             0 => __DIR__ . '/..' . '/grasmash/expander/src',
+        ),
+        'GraphQL\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/webonyx/graphql-php/src',
         ),
         'Goutte\\' => 
         array (
