@@ -2,15 +2,20 @@
 
 module.exports = {
   root: true,
+  parser: 'babel-eslint',
   parserOptions: {
-    parser: 'babel-eslint',
-    sourceType: 'module'
+    sourceType: 'module',
+    ecmaVersion: 6,
+    ecmaFeatures: {
+      jsx: true,
+    }
   },
   env: {
     browser: true,
   },
   extends: [
     'airbnb-base',
+    'plugin:react/recommended',
   ],
   // check if imports actually resolve
   rules: {

@@ -25,6 +25,7 @@
     "@babel/core": "^7.12.10",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.14.5",
     "autoprefixer": "^10.2.3",
     "babel-loader": "^8.2.2",
     "babel-plugin-array-includes": "^2.0.3",
@@ -36,6 +37,7 @@
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-loader": "^4.0.2",
     "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-react": "^7.25.1",
     "file-loader": "^6.2.0",
     "glob": "^7.1.6",
     "js-yaml": "^4.0.0",
@@ -63,6 +65,8 @@
     "lodash.merge": "^4.6.2",
     "lodash.set": "^4.3.2",
     "normalize-scss": "^7.0.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "svg.js": "^2.6.5",
     "what-input": "^5.2.10"
   }

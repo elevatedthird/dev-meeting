@@ -82,6 +82,7 @@ const entryPoints = {
   'css/wysiwyg': './wysiwyg/wysiwyg.scss',
   ...partialsCss,
   ...partialsJs,
+  'search': './search/search.js',
 };
 
 const compiledEntries = {};
@@ -147,12 +148,12 @@ module.exports = (env, argv) => {
         },
         {
           enforce: 'pre',
-          test: /\.js$/,
+          test: /\.(js|jsx)$/,
           exclude: /node_modules/,
           loader: 'eslint-loader',
         },
         {
-          test: /\.js$/,
+          test: /\.(js|jsx)$/,
           // Must add exceptions to this exclude statement for
           // anything that needs to be transpiled by babel.
           exclude: [/node_modules\/(?!foundation-sites)/],
@@ -165,6 +166,7 @@ module.exports = (env, argv) => {
                     browsers: ['> 1%', 'last 2 versions', 'ie 11'],
                   },
                 }],
+                '@babel/preset-react',
               ],
               plugins: [
                 'babel-plugin-array-includes',
